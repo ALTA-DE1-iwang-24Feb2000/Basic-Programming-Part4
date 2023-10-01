@@ -1,6 +1,19 @@
 def cetak_table_perkalian(number):
     pattern = ""
-    return pattern
+    result = []
+    if number < 1 or number > 30:
+        print('input harus dari range 1 - 30')
+    else:
+        for i in range(1, number + 1):
+            row = []
+            for j in range(1, number + 1):
+                hasil = i * j
+                pattern += str(hasil) + " "
+                row.append(hasil)
+            result.append(row)
+            pattern += '\n'
+    print(pattern)  # Cetak pattern jika Anda masih ingin mencetaknya
+    return result
 
 if __name__ == '__main__':
     cetak_table_perkalian(9)

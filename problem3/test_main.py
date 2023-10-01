@@ -1,5 +1,7 @@
 import unittest
 from main import cetak_table_perkalian
+import unittest
+from main import cetak_table_perkalian
 
 class TestCetakTablePerkalian(unittest.TestCase):
     def test_cetak_table_perkalian_9(self):
